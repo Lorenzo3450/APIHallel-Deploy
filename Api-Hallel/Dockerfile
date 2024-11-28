@@ -1,6 +1,7 @@
 # Etapa 1: Build
-FROM maven:3.8.6-openjdk-19 AS build
+FROM maven:3.9.9-eclipse-temurin-17 AS build
 LABEL authors="Lorenzo"
+
 
 # Define o diretório de trabalho
 WORKDIR /app
