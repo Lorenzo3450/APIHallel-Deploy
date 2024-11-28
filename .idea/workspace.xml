@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9329f70c-eaf9-4f70-9d9f-27076c62b07f" name="Changes" comment="configurações pra deploy correções 3">
+    <list default="true" id="9329f70c-eaf9-4f70-9d9f-27076c62b07f" name="Changes" comment="configurações pra deploy correções 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api-Hallel/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/Dockerfile" afterDir="false" />
     </list>
@@ -427,7 +427,7 @@
       <workItem from="1732322826437" duration="824000" />
       <workItem from="1732749954500" duration="2840000" />
       <workItem from="1732753277449" duration="3883000" />
-      <workItem from="1732792506231" duration="5411000" />
+      <workItem from="1732792506231" duration="6259000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto sem o Moodle">
       <option name="closed" value="true" />
@@ -749,7 +749,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732796723936</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="configurações pra deploy correções 4">
+      <option name="closed" value="true" />
+      <created>1732798149730</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1732798149730</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -767,7 +775,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="criação das rotas de adição de desconto em evento para membro e para associado" />
     <MESSAGE value="refatoração da inscrição do evento" />
     <MESSAGE value="refatoração valor evento" />
     <MESSAGE value="refatoração em eventos e em se voluntariar" />
@@ -792,7 +799,8 @@
     <MESSAGE value="configurações pra deploy correções" />
     <MESSAGE value="configurações pra deploy correções 2" />
     <MESSAGE value="configurações pra deploy correções 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="configurações pra deploy correções 3" />
+    <MESSAGE value="configurações pra deploy correções 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="configurações pra deploy correções 4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
