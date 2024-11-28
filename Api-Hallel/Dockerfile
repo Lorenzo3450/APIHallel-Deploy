@@ -4,11 +4,11 @@ FROM openjdk:19-jdk-slim AS build
 # Atualiza e instala o Maven
 RUN apt-get update && apt-get install maven -y
 
-# Define o diretório de trabalho (onde o pom.xml está localizado)
+# Defina o diretório de trabalho onde o pom.xml está localizado
 WORKDIR /Api-Hallel
 
 # Copia o conteúdo do diretório atual (onde o pom.xml está) para o diretório de trabalho do container
-COPY . .
+COPY . /Api-Hallel
 
 # Executa o Maven para compilar o projeto
 RUN mvn clean install
