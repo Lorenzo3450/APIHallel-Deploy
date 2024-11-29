@@ -74,6 +74,16 @@ public class JwtService {
                 .getBody();
     }
 
+    public boolean hasTokenExpired(String token) {
+        try {
+            return isTokenExpired(token);
+        } catch (Exception e) {
+            logger.error("Erro ao verificar a expiração do token: {}", e.getMessage());
+            return true; // Retorna true para evitar problemas com tokens inválidos
+        }
+    }
+
+
     private Key getSingKey() {
         byte[] keyBytes = Decoders.BASE64.decode(secretKey);
         return Keys.hmacShaKeyFor(keyBytes);

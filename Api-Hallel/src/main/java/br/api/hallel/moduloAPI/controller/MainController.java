@@ -80,6 +80,18 @@ public class MainController {
         return ResponseEntity.ok().body(jwtService.isTokenExpired(token));
     }
 
+    //token pra verficar se o token tá inspirado pro mobile
+    @GetMapping("/home/hasTokenExpired")
+    public ResponseEntity<Boolean> hasTokenExpired(@RequestParam(value = "token") String token) {
+        // Remoção opcional de "Bearer ", se o token vier com essa parte.
+        if (token.startsWith("Bearer ")) {
+            token = token.replace("Bearer ", "");
+        }
+        boolean expired = jwtService.hasTokenExpired(token);
+        log.info("Token verificado: {}", expired); // Usar log ao invés de System.out
+        return ResponseEntity.ok().body(expired);
+    }
+
     @GetMapping("/listarCurso")
     public ResponseEntity<List<Curso>> listAllCursosUsers() {
         return ResponseEntity.status(201).body(this.cursoService.listAllCursos());

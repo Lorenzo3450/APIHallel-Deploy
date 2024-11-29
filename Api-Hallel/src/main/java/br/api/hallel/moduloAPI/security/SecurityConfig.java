@@ -59,7 +59,8 @@ public class SecurityConfig {
             "/api/home/{id}/DoacoesObjetos",
             "/api/home/{id}/{data}/DoacaoDinheiroMobile",
             "/api/home/eventos/{data}/participarEventoMobile",
-            "/api/home/list/today"
+            "/api/home/list/today",
+            "/api/home/hasTokenExpired"
 
 
     };
