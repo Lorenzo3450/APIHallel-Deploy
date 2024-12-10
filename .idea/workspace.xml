@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9329f70c-eaf9-4f70-9d9f-27076c62b07f" name="Changes" comment="rota para verificar se o token é valido">
+    <list default="true" id="9329f70c-eaf9-4f70-9d9f-27076c62b07f" name="Changes" comment="alteração na busca do id do associado">
+      <change afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/payload/resposta/BuscarIdAssociadoRes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/membro/MembroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/membro/MembroController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/payload/requerimento/VirarAssociadoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/payload/requerimento/VirarAssociadoRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/service/financeiro/AssociadoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/service/financeiro/AssociadoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -436,6 +439,7 @@
       <workItem from="1733616218516" duration="2262000" />
       <workItem from="1733701882474" duration="1394000" />
       <workItem from="1733786343885" duration="1922000" />
+      <workItem from="1733789193035" duration="495000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto sem o Moodle">
       <option name="closed" value="true" />
@@ -821,7 +825,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732842969743</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="alteração na busca do id do associado">
+      <option name="closed" value="true" />
+      <created>1733789690656</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1733789690656</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -839,7 +851,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="criação de nova rota de editar eventos para o mobile" />
     <MESSAGE value="Refatoracao em doacao de eventos" />
     <MESSAGE value="nova rota de doacoes de objetos" />
     <MESSAGE value="novas rotas mobiles criadas e começando a desenvolver a logica de quizes" />
@@ -864,7 +875,8 @@
     <MESSAGE value="configurações pra deploy correções 8" />
     <MESSAGE value="configurações pra deploy correções 10" />
     <MESSAGE value="rota para verificar se o token é valido" />
-    <option name="LAST_COMMIT_MESSAGE" value="rota para verificar se o token é valido" />
+    <MESSAGE value="alteração na busca do id do associado" />
+    <option name="LAST_COMMIT_MESSAGE" value="alteração na busca do id do associado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

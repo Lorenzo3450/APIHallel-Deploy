@@ -7,10 +7,7 @@ import br.api.hallel.moduloAPI.model.CartaoCredito;
 import br.api.hallel.moduloAPI.model.Transacao;
 import br.api.hallel.moduloAPI.payload.requerimento.PagarAssociacaoRequest;
 import br.api.hallel.moduloAPI.payload.requerimento.VirarAssociadoRequest;
-import br.api.hallel.moduloAPI.payload.resposta.AssociadoPagamentosRes;
-import br.api.hallel.moduloAPI.payload.resposta.AssociadoPerfilResponse;
-import br.api.hallel.moduloAPI.payload.resposta.AssociadoResponseList;
-import br.api.hallel.moduloAPI.payload.resposta.PagamentoAssociadoPerfilResponse;
+import br.api.hallel.moduloAPI.payload.resposta.*;
 
 import java.util.Date;
 import java.util.List;
@@ -31,7 +28,7 @@ public interface AssociadoInterface {
     Associado findByEmail(String email);
 
 
-    String IdAssociadofindByEmail(String email);
+    BuscarIdAssociadoRes IdAssociadofindByEmail(String email);
 
     List<Associado> listAssociadosByPago();
     List<Associado> listAssociadosByPendente();
