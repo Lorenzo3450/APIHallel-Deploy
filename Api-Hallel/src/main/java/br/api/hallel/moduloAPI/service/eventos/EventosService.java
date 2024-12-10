@@ -11,10 +11,7 @@ import br.api.hallel.moduloAPI.financeiroNovo.service.PagamentoEntradaEventoServ
 import br.api.hallel.moduloAPI.model.*;
 import br.api.hallel.moduloAPI.payload.requerimento.*;
 import br.api.hallel.moduloAPI.payload.resposta.*;
-import br.api.hallel.moduloAPI.repository.AssociadoRepository;
-import br.api.hallel.moduloAPI.repository.EventosRepository;
-import br.api.hallel.moduloAPI.repository.LocalEventoRepository;
-import br.api.hallel.moduloAPI.repository.MembroRepository;
+import br.api.hallel.moduloAPI.repository.*;
 import br.api.hallel.moduloAPI.service.interfaces.EventosInterface;
 import br.api.hallel.moduloAPI.service.main.MembroService;
 import lombok.extern.log4j.Log4j2;
@@ -33,6 +30,10 @@ public class EventosService implements EventosInterface {
 
     @Autowired
     private EventosRepository repository;
+
+    @Autowired
+    private EventoArquivadoRepository repositoryArqivado;
+
     @Autowired
     private PagamentoEntradaEventoRepository pagamentoEntradaEventoRepository;
     @Autowired
@@ -359,6 +360,16 @@ public class EventosService implements EventosInterface {
 
         if (listarEventoById(id) != null) {
             this.repository.deleteById(id);
+            log.info("EVENTO DELETADO!");
+        } else {
+            throw new EventoNotFoundException("Evento não econtrado");
+        }
+    }
+
+    public void deleteEventoArquivadoById(String id) {
+
+        if (listarEventoById(id) != null) {
+            this.repositoryArqivado.deleteById(id);
             log.info("EVENTO DELETADO!");
         } else {
             throw new EventoNotFoundException("Evento não econtrado");

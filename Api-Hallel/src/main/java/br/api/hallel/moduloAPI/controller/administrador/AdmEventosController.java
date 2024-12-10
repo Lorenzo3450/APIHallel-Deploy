@@ -126,6 +126,20 @@ public class AdmEventosController {
         }
     }
 
+    @GetMapping("/{id}/deleteArquivado")
+    public boolean deleteEventoArquivado(@PathVariable(value = "id") String id) {
+        try {
+            this.eventosService.deleteEventoArquivadoById(id);
+            System.out.println("evento deletado");
+            return true;  // Retorna true se o evento for deletado com sucesso
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;  // Retorna false em caso de falha
+        }
+    }
+
+
+
     @GetMapping("/{idEvento}/list")
     public ResponseEntity<EventosResponse> listarEventoByIdEvento(@PathVariable(value = "idEvento") String idEvento) {
         return ResponseEntity.status(200).body(this.eventosService.listarEventoById(idEvento));

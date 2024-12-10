@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9329f70c-eaf9-4f70-9d9f-27076c62b07f" name="Changes" comment="alteração na busca do id do associado">
-      <change afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/payload/resposta/BuscarIdAssociadoRes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/membro/MembroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/membro/MembroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/payload/requerimento/VirarAssociadoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/payload/requerimento/VirarAssociadoRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/service/financeiro/AssociadoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/service/financeiro/AssociadoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/administrador/AdmEventosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/administrador/AdmEventosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/service/eventos/EventosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/service/eventos/EventosService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -439,15 +437,8 @@
       <workItem from="1733616218516" duration="2262000" />
       <workItem from="1733701882474" duration="1394000" />
       <workItem from="1733786343885" duration="1922000" />
-      <workItem from="1733789193035" duration="495000" />
-    </task>
-    <task id="LOCAL-00001" summary="Projeto sem o Moodle">
-      <option name="closed" value="true" />
-      <created>1698709652148</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1698709652148</updated>
+      <workItem from="1733789193035" duration="1952000" />
+      <workItem from="1733793830980" duration="296000" />
     </task>
     <task id="LOCAL-00002" summary="adição do crud de contribuições no retiro">
       <option name="closed" value="true" />
@@ -833,7 +824,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733789690656</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="alteração na busca do id do associado">
+      <option name="closed" value="true" />
+      <created>1733790119869</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1733790119869</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -898,7 +897,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/service/eventos/EventosService.java</url>
-          <line>304</line>
+          <line>305</line>
           <properties class="br.api.hallel.moduloAPI.service.eventos.EventosService" method="listarEventosByTitulo">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
