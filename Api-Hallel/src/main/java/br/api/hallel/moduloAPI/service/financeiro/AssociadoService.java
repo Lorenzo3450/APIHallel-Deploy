@@ -9,10 +9,7 @@ import br.api.hallel.moduloAPI.model.*;
 import br.api.hallel.moduloAPI.payload.requerimento.PagamentoAssociadoRequest;
 import br.api.hallel.moduloAPI.payload.requerimento.PagarAssociacaoRequest;
 import br.api.hallel.moduloAPI.payload.requerimento.VirarAssociadoRequest;
-import br.api.hallel.moduloAPI.payload.resposta.AssociadoPagamentosRes;
-import br.api.hallel.moduloAPI.payload.resposta.AssociadoPerfilResponse;
-import br.api.hallel.moduloAPI.payload.resposta.AssociadoResponseList;
-import br.api.hallel.moduloAPI.payload.resposta.PagamentoAssociadoPerfilResponse;
+import br.api.hallel.moduloAPI.payload.resposta.*;
 import br.api.hallel.moduloAPI.repository.AssociadoRepository;
 import br.api.hallel.moduloAPI.repository.MembroRepository;
 import br.api.hallel.moduloAPI.repository.RoleRepository;
@@ -167,15 +164,19 @@ public class AssociadoService implements AssociadoInterface {
     }
 
     @Override
-    public String IdAssociadofindByEmail(String email) {
+    public BuscarIdAssociadoRes IdAssociadofindByEmail(String email) {
 
         Optional<Associado> optional = associadoRepository.findByEmail(email);
 
+        BuscarIdAssociadoRes id = new BuscarIdAssociadoRes();
         if (optional.isPresent()) {
-            return optional.get().getId();
+            id.setId(optional.get().getId());
+
+            return id;
         }
 
-        return "";
+        id.setId("");
+        return id;
     }
 
 

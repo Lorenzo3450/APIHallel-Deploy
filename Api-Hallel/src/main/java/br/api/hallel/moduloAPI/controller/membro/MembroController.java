@@ -5,10 +5,7 @@ import br.api.hallel.moduloAPI.model.Associado;
 import br.api.hallel.moduloAPI.payload.requerimento.BuscarIdAssociadoReq;
 import br.api.hallel.moduloAPI.payload.requerimento.EditPerfilRequest;
 import br.api.hallel.moduloAPI.payload.requerimento.VirarAssociadoRequest;
-import br.api.hallel.moduloAPI.payload.resposta.AssociadoResponse;
-import br.api.hallel.moduloAPI.payload.resposta.DoacaoDinheiroEventoResponse;
-import br.api.hallel.moduloAPI.payload.resposta.EditPerfilResponse;
-import br.api.hallel.moduloAPI.payload.resposta.PerfilResponse;
+import br.api.hallel.moduloAPI.payload.resposta.*;
 import br.api.hallel.moduloAPI.service.financeiro.AssociadoService;
 import br.api.hallel.moduloAPI.service.main.MembroService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -72,7 +69,7 @@ public class MembroController {
     }
 
     @PostMapping("/buscarAssociadoEmail")
-    public ResponseEntity<String> buscarAssociado(@RequestBody BuscarIdAssociadoReq buscarIdAssociadoReq) {
+    public ResponseEntity<BuscarIdAssociadoRes> buscarAssociado(@RequestBody BuscarIdAssociadoReq buscarIdAssociadoReq) {
 
         System.out.println(buscarIdAssociadoReq.getEmail()); // Verifique se o email está sendo corretamente capturado
         return ResponseEntity.ok().body(this.associadoService.IdAssociadofindByEmail(buscarIdAssociadoReq.getEmail()));

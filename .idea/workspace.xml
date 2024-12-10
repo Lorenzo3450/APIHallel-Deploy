@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9329f70c-eaf9-4f70-9d9f-27076c62b07f" name="Changes" comment="configurações pra deploy correções 10">
+    <list default="true" id="9329f70c-eaf9-4f70-9d9f-27076c62b07f" name="Changes" comment="rota para verificar se o token é valido">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/security/services/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/security/services/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/payload/requerimento/VirarAssociadoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/payload/requerimento/VirarAssociadoRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -430,7 +428,14 @@
       <workItem from="1732749954500" duration="2840000" />
       <workItem from="1732753277449" duration="3883000" />
       <workItem from="1732792506231" duration="9641000" />
-      <workItem from="1732834923075" duration="3107000" />
+      <workItem from="1732834923075" duration="5057000" />
+      <workItem from="1733173549456" duration="585000" />
+      <workItem from="1733179634939" duration="73000" />
+      <workItem from="1733229552238" duration="609000" />
+      <workItem from="1733522277037" duration="1761000" />
+      <workItem from="1733616218516" duration="2262000" />
+      <workItem from="1733701882474" duration="1394000" />
+      <workItem from="1733786343885" duration="1922000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto sem o Moodle">
       <option name="closed" value="true" />
@@ -808,7 +813,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732801993251</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="rota para verificar se o token é valido">
+      <option name="closed" value="true" />
+      <created>1732842969743</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1732842969743</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -826,7 +839,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="criação de novas rotas para associados" />
     <MESSAGE value="criação de nova rota de editar eventos para o mobile" />
     <MESSAGE value="Refatoracao em doacao de eventos" />
     <MESSAGE value="nova rota de doacoes de objetos" />
@@ -851,7 +863,8 @@
     <MESSAGE value="configurações pra deploy correções 7" />
     <MESSAGE value="configurações pra deploy correções 8" />
     <MESSAGE value="configurações pra deploy correções 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="configurações pra deploy correções 10" />
+    <MESSAGE value="rota para verificar se o token é valido" />
+    <option name="LAST_COMMIT_MESSAGE" value="rota para verificar se o token é valido" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

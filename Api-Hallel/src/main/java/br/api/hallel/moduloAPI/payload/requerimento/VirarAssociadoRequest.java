@@ -24,8 +24,7 @@ public class VirarAssociadoRequest {
     private String enderecoCartao;
     private int metodoPagamentoNum;
 
-    public VirarAssociadoRequest() {
-    }
+
 
     public CartaoCredito toCartaoAssociado() {
         CartaoCredito cartaoCredito = new CartaoCredito();
