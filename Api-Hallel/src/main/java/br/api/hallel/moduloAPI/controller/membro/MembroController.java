@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -73,7 +74,7 @@ public class MembroController {
 
     @PostMapping("/{data}/virarAssociado")
     public ResponseEntity<VirarAssociadoResponse> createAssociadoMobile(@PathVariable(value = "data") String data,
-            @RequestBody VirarAssociadoRequest virarAssociadoRequest) {
+            @RequestBody VirarAssociadoRequest virarAssociadoRequest) throws ParseException {
 
         VirarAssociadoResponse response = new VirarAssociadoResponse();
 
