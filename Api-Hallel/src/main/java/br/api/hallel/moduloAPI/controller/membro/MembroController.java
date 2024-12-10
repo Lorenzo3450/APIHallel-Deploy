@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
@@ -55,6 +57,39 @@ public class MembroController {
     public ResponseEntity<VirarAssociadoResponse> createAssociado(@RequestBody VirarAssociadoRequest virarAssociadoRequest) {
 
         VirarAssociadoResponse response = new VirarAssociadoResponse();
+
+        try {
+            response.setResultado(this.associadoService.criarAssociado(virarAssociadoRequest));
+
+            if (response.getResultado()) {
+                return ResponseEntity.status(200).body(response);
+            } else {
+                return ResponseEntity.status(402).body(response);
+            }
+        } catch (AssociadoNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @PostMapping("/{data}/virarAssociado")
+    public ResponseEntity<VirarAssociadoResponse> createAssociadoMobile(@PathVariable(value = "data") String data,
+            @RequestBody VirarAssociadoRequest virarAssociadoRequest) {
+
+        VirarAssociadoResponse response = new VirarAssociadoResponse();
+
+        data = data.replace("-", "/");
+
+        SimpleDateFormat sdfInput = new SimpleDateFormat("dd/MM/yyyy"); // Formato da string recebida
+
+
+
+
+
+        Date data2 = sdfInput.parse(data);
+
+
+        virarAssociadoRequest.setDataValidadeCartao(data2);
+
 
         try {
             response.setResultado(this.associadoService.criarAssociado(virarAssociadoRequest));
