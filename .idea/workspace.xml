@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9329f70c-eaf9-4f70-9d9f-27076c62b07f" name="Changes" comment="nova rota de virar associado" />
+    <list default="true" id="9329f70c-eaf9-4f70-9d9f-27076c62b07f" name="Changes" comment="conserto da nova rota de virar associado">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/membro/MembroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/membro/MembroController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -435,15 +438,7 @@
       <workItem from="1733786343885" duration="1922000" />
       <workItem from="1733789193035" duration="1952000" />
       <workItem from="1733793830980" duration="3167000" />
-      <workItem from="1733834176433" duration="3545000" />
-    </task>
-    <task id="LOCAL-00005" summary="Adição das classes model,interface,repository,requerimento,Response e service da doação de objetos pra eventos">
-      <option name="closed" value="true" />
-      <created>1704831048309</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1704831048309</updated>
+      <workItem from="1733834176433" duration="4604000" />
     </task>
     <task id="LOCAL-00006" summary="adição da rota de listagem de voluntarios do eventos">
       <option name="closed" value="true" />
@@ -829,7 +824,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733845025533</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="conserto da nova rota de virar associado">
+      <option name="closed" value="true" />
+      <created>1733845344713</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1733845344713</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -847,7 +850,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rotas do quiz criadas" />
     <MESSAGE value="nova rota de criar evento para o mobile" />
     <MESSAGE value="Alteracoes nas rotas de listagem de Doacoes para eventos" />
     <MESSAGE value="alterações para fazer o git voltar a funcionar" />
@@ -872,7 +874,8 @@
     <MESSAGE value="nova rota de deletar evento arquivado" />
     <MESSAGE value="alteração na rota de virar associado" />
     <MESSAGE value="nova rota de virar associado" />
-    <option name="LAST_COMMIT_MESSAGE" value="nova rota de virar associado" />
+    <MESSAGE value="conserto da nova rota de virar associado" />
+    <option name="LAST_COMMIT_MESSAGE" value="conserto da nova rota de virar associado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

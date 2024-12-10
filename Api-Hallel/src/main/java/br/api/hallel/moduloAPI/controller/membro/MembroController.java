@@ -72,8 +72,9 @@ public class MembroController {
         }
     }
 
-    @PostMapping("/{data}/virarAssociado")
+    @PostMapping("/{dataNasc}/{data}/virarAssociado")
     public ResponseEntity<VirarAssociadoResponse> createAssociadoMobile(@PathVariable(value = "data") String data,
+                                                                        @PathVariable(value = "dataNasc") String dataNasc,
             @RequestBody VirarAssociadoRequest virarAssociadoRequest) throws ParseException {
 
         VirarAssociadoResponse response = new VirarAssociadoResponse();
@@ -82,14 +83,17 @@ public class MembroController {
 
         SimpleDateFormat sdfInput = new SimpleDateFormat("dd/MM/yyyy"); // Formato da string recebida
 
-
-
-
-
         Date data2 = sdfInput.parse(data);
+
+        dataNasc = dataNasc.replace("-", "/");
+
+        SimpleDateFormat sdfInput2 = new SimpleDateFormat("dd/MM/yyyy"); // Formato da string recebida
+
+        Date dataNasc2 = sdfInput2.parse(dataNasc);
 
 
         virarAssociadoRequest.setDataValidadeCartao(data2);
+        virarAssociadoRequest.setDataNascimento(dataNasc2);
 
 
         try {
