@@ -52,16 +52,17 @@ public class MembroController {
     }
 
     @PostMapping("/virarAssociado")
-    public ResponseEntity<Boolean> createAssociado(@RequestBody VirarAssociadoRequest virarAssociadoRequest) {
-        Boolean booleanResposta = null;
+    public ResponseEntity<VirarAssociadoResponse> createAssociado(@RequestBody VirarAssociadoRequest virarAssociadoRequest) {
+
+        VirarAssociadoResponse response = new VirarAssociadoResponse();
 
         try {
-            booleanResposta = this.associadoService.criarAssociado(virarAssociadoRequest);
+            response.setResultado(this.associadoService.criarAssociado(virarAssociadoRequest));
 
-            if (booleanResposta) {
-                return ResponseEntity.status(200).body(true);
+            if (response.getResultado()) {
+                return ResponseEntity.status(200).body(response);
             } else {
-                return ResponseEntity.status(402).body(false);
+                return ResponseEntity.status(402).body(response);
             }
         } catch (AssociadoNotFoundException e) {
             throw new RuntimeException(e);

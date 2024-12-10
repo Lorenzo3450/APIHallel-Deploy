@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9329f70c-eaf9-4f70-9d9f-27076c62b07f" name="Changes" comment="alteração na busca do id do associado">
+    <list default="true" id="9329f70c-eaf9-4f70-9d9f-27076c62b07f" name="Changes" comment="alteração na rota de virar associado">
+      <change afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/payload/resposta/VirarAssociadoResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/administrador/AdmEventosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/administrador/AdmEventosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/service/eventos/EventosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/service/eventos/EventosService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/membro/MembroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/controller/membro/MembroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/financeiroNovo/model/MetodosPagamentosFinanceiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/financeiroNovo/model/MetodosPagamentosFinanceiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/payload/requerimento/PagamentoAssociadoRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api-Hallel/src/main/java/br/api/hallel/moduloAPI/payload/requerimento/PagamentoAssociadoRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -438,15 +440,8 @@
       <workItem from="1733701882474" duration="1394000" />
       <workItem from="1733786343885" duration="1922000" />
       <workItem from="1733789193035" duration="1952000" />
-      <workItem from="1733793830980" duration="296000" />
-    </task>
-    <task id="LOCAL-00002" summary="adição do crud de contribuições no retiro">
-      <option name="closed" value="true" />
-      <created>1700178916885</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1700178916885</updated>
+      <workItem from="1733793830980" duration="3167000" />
+      <workItem from="1733834176433" duration="2249000" />
     </task>
     <task id="LOCAL-00003" summary="adição do crud de contribuições no retiro">
       <option name="closed" value="true" />
@@ -832,7 +827,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733790119869</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="nova rota de deletar evento arquivado">
+      <option name="closed" value="true" />
+      <created>1733794287540</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1733794287540</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -850,8 +853,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refatoracao em doacao de eventos" />
-    <MESSAGE value="nova rota de doacoes de objetos" />
     <MESSAGE value="novas rotas mobiles criadas e começando a desenvolver a logica de quizes" />
     <MESSAGE value="rotas do quiz criadas" />
     <MESSAGE value="nova rota de criar evento para o mobile" />
@@ -875,7 +876,9 @@
     <MESSAGE value="configurações pra deploy correções 10" />
     <MESSAGE value="rota para verificar se o token é valido" />
     <MESSAGE value="alteração na busca do id do associado" />
-    <option name="LAST_COMMIT_MESSAGE" value="alteração na busca do id do associado" />
+    <MESSAGE value="nova rota de deletar evento arquivado" />
+    <MESSAGE value="alteração na rota de virar associado" />
+    <option name="LAST_COMMIT_MESSAGE" value="alteração na rota de virar associado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

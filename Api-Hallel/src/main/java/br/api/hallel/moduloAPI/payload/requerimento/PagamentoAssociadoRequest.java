@@ -42,6 +42,9 @@ public class PagamentoAssociadoRequest {
             case 4:
                 pagamentoAssociado.setMetodoPagamento(MetodosPagamentosFinanceiro.CARTAO_CREDITO);
                 break;
+            case 5:
+                pagamentoAssociado.setMetodoPagamento(MetodosPagamentosFinanceiro.BOLETO);
+                break;
         }
         pagamentoAssociado.setPara(this.para);
         pagamentoAssociado.setDataPaga(this.dataPaga);
